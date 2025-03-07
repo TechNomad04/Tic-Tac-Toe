@@ -1,0 +1,39 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.cont{
+    height: min(66vh, 66vw);
+    width: min(62vh, 62vw);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div>div{
+    height: min(22vh, 22vw);
+    width: min(62vh, 62vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 98%;
+    width: min(20vh, 20vw);
+    border: none;
+    margin-left: 2px;
+    background-color: lightcoral;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #dd3e7b, #86174b);
+}

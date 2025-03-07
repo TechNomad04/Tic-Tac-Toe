@@ -27,8 +27,6 @@ function draw(){
 }
 
 function play(user1, user2){
-    let x = prompt("Enter x: ");
-    let y = prompt("Enter y: ");
     if(arr[x][y] !== '')
         return play(user1, user2);
     user1.mark(x,y);
