@@ -26,30 +26,4 @@ function draw(){
     return false;
 }
 
-function play(user1, user2){
-    for(let i = 0; i < 3;i++){
-        for(let j = 0; j < 3; j++){
-            document.querySelector(`.b${i}${j}`).addEventListener('click', ()=>{
-                console.log("H");
-                if(arr[i][j] !== '')
-                    play(user1, user2);
-                else{
-                    if(draw()){
-                        console.log("Draw");
-                        return;
-                    }
-                    else{
-                        user1.mark(i, j);
-                        if(user1.win()){
-                            console.log(user1.name + " wins!");
-                            return;
-                        }
-                        play(user2, user1);
-                    }
-                }
-            })
-        }
-    }
-}
-
 start();
